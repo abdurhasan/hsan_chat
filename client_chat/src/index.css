@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700&subset=latin-ext');
+*{
+  font-family: Roboto Mono
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+}
+
+.App-logo{  
+  height: 20px;  
+}
+.App-logo:hover{
+  cursor: pointer;
+}
+.container{
+  margin-left: 40% !important;
+  margin-top: 20% !important;
+}
+
+#container_chat{   
+  
+  margin-left: 15%; 
+  margin-right: 17%;    
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  padding-bottom: 4%
+  
+}
+
+#inputData{  
+  
+  display: flex;  
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+#name{
+  margin-bottom: 5%;   
+  
+}
+#pesan{
+  width: 200%
+}
+#name input,#pesan  input{
+  padding: 10px;
+  border:none;
+  outline: none;
+  background-color: #282c34;
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  color:whitesmoke;
+}
+input::placeholder{
+  color:whitesmoke;
+  font-size: 70% !important;
+}
+#pesan input{
+  width: 80%;  
+}
+
+#list_chat{    
+  display: flex;  
+  margin-bottom: 1%;
+  margin-right: 4%;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  align-items: center
+} 
+
+.deleteBtn{
+  order:1;
+  margin-right: 5%;
+  height: 2em; 
+  
+}
+.deleteBtn:hover{
+  cursor: pointer;
+}
+.chat_box{
+  order:2;
+  background: #fff;  
+  border-top: 1em solid #21ba45;
+  position: relative;
+  padding: 1em;
+  border-radius: .28571429rem;      
+  margin-right: 2%
+}
+
+#sender{
+  font-weight: bold;
+  font-size: small;
+}
+#msg{
+  font-size: x-large;
+}
+#time{
+  font-size: small;
+  color:grey
+}
+
+#hiddenInput{
+  visibility: hidden;
+}
